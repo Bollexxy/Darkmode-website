@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>HTML</title>
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+     <nav>
+      <h1>LT</h1> 
+       <ul>
+         <li>Home</li>
+         <li>Contact</li>
+         <li>Portfolio</li>
+         <li>Support</li>
+       </ul>
+       <div>
+      <i class="fa fa-sun-o" onclick="lightmode()" aria-hidden="true"></i>
+      <i class="fa fa-moon-o" onclick="darkmode()" aria-hidden="true"></i>
+      
+      </div>
+     </nav>
+     <main>
+       <img src="/images/Snapchat-794694241.jpg" alt="">
+       <span>Welcome to my Portfolio</span>
+       <p>I am Yemitan Boluwatife, an expert in Web Designing who gives great satisfaction to his clients.</p>
+       <button type="submit" onclick="showpopup()">Hire Me</button>
+     </main>
+         <aside>
+           <div class="container" id="cont">
+             <div class="popup">
+               <div class="check-mark">
+                 <p>✓</p>
+               </div>
+               <h2>Thank You!</h2>
+               <p>You have successfully hired me for the job. Please contact me for more information.</p>
+               <button type="button" class="ok" onclick="closepopup()">OK</button>
+             </div>
+           </div>
+           </div>
+         </aside>
+<script src="https://kit.fontawesome.com/240b567981.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+  </body>
+</html>

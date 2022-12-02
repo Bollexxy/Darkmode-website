@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+:root{
+   --black: black;
+   --white: white;
+   --hover-color: orange;
+   --opacity-0: 0;
+   --opacity-1: 1;
+   --popup-color: white;
+   --cont-color: rgba(0, 0, 0, 0.7);
+}
+.dark-theme{
+     --black: white;
+     --white: black;
+     --hover-color: orange;
+        --opacity-0: 1;
+        --opacity-1: 0;
+        --popup-color: black;
+}
+body{
+  background: var(--white);
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
+  position: relative;
+}
+.container{
+  font-family: monospace;
+  background-color: rgba(0, 0, 0, .7);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 20% 60px;
+  z-index: 10;
+  position: absolute;
+  top: -100vh;
+  transition: 1s;
+  
+}
+.popup{
+  text-align: center;
+  background-color: var(--popup-color);
+  height: fit-content;
+  padding: 20px 60px;
+  
+ 
+}
+.show-popup{
+  top: 0vh;
+}
+.check-mark{
+  font-size: 50px;
+  background: darkgreen;
+  color: white;
+  height: 200px;
+  width: 200px;
+  margin-left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.popup h2{
+  font-size: 80px;
+}
+.popup p{
+  font-size: 60px;
+}
+.popup button{
+  padding: 40px 80px;
+  font-size: 60px;
+  margin-top: 60px;
+  background-color: darkgreen;
+  color: white;
+  outline: none;
+  border: none;
+  width: 95%;
+  margin-bottom: 50px;
+  border-radius: 120px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+h1:first-letter{
+  background: red;
+  padding: 3px 5px;
+  color: white;
+  margin: 3px;
+}
+h1{
+  font-size: 50px;
+  color: orangered;
+}
+nav ul{
+  display: inline-flex;
+  list-style: none;
+  text-align: center;
+}
+nav ul li{
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: var(--black);
+}
+nav ul li:hover{
+  color: var(--hover-color);
+}
+.fa{
+  position: absolute;
+  right: 20px;
+  font-size: 40px;
+  margin-left: 60px;
+}
+.fa-sun-o{
+  color: white;
+  opacity: var(--opacity-0);
+}
+.fa-moon-o{
+  color: black;
+  opacity: var(--opacity-1);
+}
+
+main{
+  text-align: center;
+  margin-top: 80px;
+  width: 100%;
+}
+main img{
+  display: block;
+  margin: auto;
+  height: 700px;
+  width: 700px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 15px solid var(--black);
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+main span{
+  color: var(--black);
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 20px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: block;
+}
+main p{
+  font-size: 45px;
+  color: var(--black);
+  line-height: 60px;
+}
+main button{
+  padding: 50px 100px;
+  margin: 80px 40px;
+  width: 40%;
+  font-size: 40px;
+  font-weight: bolder;
+  background: var(--black);
+  color: var(--white);
+  transition: .5s;
+  outline: none;
+  border: 10px solid orange;
+}
+button:hover{
+  color: var(--hover-color);
+  transform: translateY(-20px);
+}
